@@ -138,7 +138,8 @@
     Submit agent flow · Agent Lifecycle · Observability (mockup pattern, in the submit flow and beyond) · Public Marketplace for agent acquisition (separate URL)
     &nbsp;·&nbsp;
     <span style="color:var(--yellow);font-weight:800">OUT</span>
-    HUMAIN Code · HUMAIN Guardian certification
+    HUMAIN Code · HUMAIN Guardian certification · HUMAIN Workspace publish
+    &nbsp;·&nbsp; Approved dev-flow mockup: <a href="https://ritwik-turing.github.io/humain-one/Agent_Lifecycle_V9.html" target="_blank" rel="noopener" style="color:#bcd2ff">V9 ↗</a>
   </div>
 
   <div class="sheet">
@@ -185,8 +186,8 @@ const sections=[
  {k:'A',t:'A · PRODUCT & PORTAL (FE)',epics:[
    {n:'V05 Portal: HUMAIN ONE',id:'1106',mk:'prog',href:'https://ritwik-turing.github.io/humain-one/Humain1_Revamp_V03.html',bars:[{c:1,span:4,cls:'green',text:'Build V05 journey · 25 open'}]},
    {n:'V05 backend APIs (new epic)',id:'1182',mk:'prog',href:'#',bars:[{c:1,span:1,cls:'yellow',text:'Scope'},{c:2,span:3,cls:'green',text:'Build endpoints · 10 open'}]},
-   {n:'HUMAIN Workspace publish',id:'',mk:'todo',star:true,href:'#',bars:[{c:3,span:1,cls:'yellow',text:'Scope'},{c:4,span:2,cls:'blue',text:'Build publish'}]},
-   {n:'Public Marketplace (separate URL)',id:'',mk:'todo',href:'#',bars:[{c:3,span:1,cls:'yellow',text:'Scope'},{c:4,span:2,cls:'blue',text:'Build storefront'}]},
+   {n:'HUMAIN Workspace publish — out of LEAP scope',id:'',mk:'todo',href:'#',bars:[{c:5,span:1,cls:'future',text:'Post-LEAP'}]},
+   {n:'Public Marketplace (separate URL) — LEAP scope',id:'',mk:'prog',star:true,href:'#',bars:[{c:3,span:1,cls:'yellow',text:'Scope & design · Ritwik · this week'},{c:4,span:2,cls:'blue',text:'Build storefront · picked up S7'}]},
  ]},
  {k:'B',t:'B · ALM CORE & SANDBOX LIFECYCLE',epics:[
    {n:'Sandbox Definition & Lifecycle',id:'524',mk:'prog',href:'https://docs.google.com/document/d/1bf-_yHkRdT0EmJo6IgSn7nBdPFaJfH8URGEVvD_zbu4',bars:[{c:1,span:2,cls:'green',text:'Provision · delete · health'},{c:3,span:2,cls:'green',text:'Update / re-config · 11 open · 1 blocked'}]},
@@ -207,7 +208,7 @@ const sections=[
    {n:'QA Workflow Operationalization',id:'1108',mk:'todo',href:'#',bars:[{c:3,span:3,cls:'green',text:'QA workflow'}]},
  ]},
  {k:'F',t:'F · OBSERVABILITY',epics:[
-   {n:'Observability: usage / safety / audit / logs',id:'997',mk:'prog',href:'https://docs.google.com/spreadsheets/d/1UV2PHQnavYSFqYGPYGEaDhL4eus-UlmIt8Ix4mi4I08/edit?usp=sharing',refs:[{t:'Mock V10 · aligned',u:'https://ritwik-turing.github.io/humain-one/Agent_Lifecycle_V10.html'},{t:'V9 dense',u:'https://ritwik-turing.github.io/humain-one/Agent_Lifecycle_V9.html'},{t:'V8',u:'https://ritwik-turing.github.io/humain-one/Agent_Lifecycle_V8.html'}],bars:[{c:1,span:3,cls:'green',text:'Usage · safety · tracing · audit · logs',half:'top'},{c:3,span:2,cls:'green',text:'Group 4 L0 build (1898–1903) · 13 open',half:'bot'}]},
+   {n:'Observability: usage / safety / audit / logs',id:'997',mk:'prog',href:'https://docs.google.com/spreadsheets/d/1UV2PHQnavYSFqYGPYGEaDhL4eus-UlmIt8Ix4mi4I08/edit?usp=sharing',refs:[{t:'V9 · APPROVED dev flow',u:'https://ritwik-turing.github.io/humain-one/Agent_Lifecycle_V9.html'},{t:'V10 alt',u:'https://ritwik-turing.github.io/humain-one/Agent_Lifecycle_V10.html'},{t:'V8 alt',u:'https://ritwik-turing.github.io/humain-one/Agent_Lifecycle_V8.html'}],bars:[{c:1,span:3,cls:'green',text:'Usage · safety · tracing · audit · logs',half:'top'},{c:3,span:2,cls:'green',text:'Group 4 L0 build (1898–1903) · 13 open',half:'bot'}]},
    {n:'Agent perf metrics · cost · KPI',id:'',mk:'prog',href:'https://docs.google.com/document/d/1UKecvJOJ4PDbXZYpMLH09DuOTES7xy2qZG1E6erfjtI/edit',bars:[{c:1,span:3,cls:'yellow',text:'Scope · P1 done'}]},
  ]},
  {k:'G',t:'G · HUMAIN PLATFORM INTEGRATION  (CODE & GUARDIAN OUT OF LEAP SCOPE — ANDREW, 15 JUL)',epics:[
@@ -266,8 +267,8 @@ const cards=[
  {sp:'S4',dt:'15–26 Jun',acc:'var(--green)',status:'COMMITTED',scol:'var(--green)',head:'Developer flow, new UX, end to end',desc:'The redesigned V05 portal, front to back.',show:['Submit → configure → provision sandbox','Run Meeting Manager agent live','New developer UX, end to end'],backed:'V05 Portal 1106 · Sandbox 524 · Ref agents'},
  {sp:'S5',dt:'29 Jun–10 Jul',acc:'var(--green)',status:'COMMITTED',scol:'var(--green)',head:'Real-API lifecycle + observability (first cut)',desc:'Journey now driven by the V05 backend APIs.',show:['Portal on real V05 APIs, not mocks','Observability: usage, logs, tracing','Harnesses running the agents'],backed:'V05 APIs 1182 · Observability 997 · Harnesses'},
  {sp:'S6',dt:'13–24 Jul',acc:'var(--amber)',status:'INTERNAL DELIVERY',scol:'var(--amber)',head:'Governed golden path, end to end',desc:'The governed lifecycle working internally.',show:['agent.yaml → Resolve & Plan (shows work)','Deploy → run → evidence','Prism eval wired in (stub if needed)'],backed:'Resolve V1 · Prism 111 · Registry 467 · Publish'},
- {sp:'S7',dt:'27 Jul–7 Aug',acc:'var(--blue)',status:'COMMITTED',scol:'var(--blue)',head:'Agent Lifecycle & Observability, demo-ready',desc:'The aligned lifecycle surface on real APIs, ahead of staging exposure.',note:'Re-scoped 15 Jul: HUMAIN Code and Guardian are out of LEAP; S7 doubles down on the lifecycle + observability surface Andrew approved.',show:['Agent Lifecycle: aligned design (from the 3 mockups)','Observability in the submit flow and beyond','Sandbox re-configure in place (TR3-2.1)'],backed:'Observability 997 · Group 4 L0 1898–1903 · FE 733 · DeployNow'},
- {sp:'S8',dt:'10–21 Aug',acc:'var(--purple)',status:'LEAP LAUNCH',scol:'var(--purple)',head:'Two-sided marketplace, governed lifecycle',desc:'The full LEAP story, from publish to procure.',show:['Submit agent flow, end to end','Agent Lifecycle + Observability, mockup pattern','Public Marketplace (separate URL): discover, procure, reuse','HUMAIN agents: Meeting, Trip, Translation'],backed:'Public Marketplace · Publish · Observability 997 · Reference cases'},
+ {sp:'S7',dt:'27 Jul–7 Aug',acc:'var(--blue)',status:'COMMITTED',scol:'var(--blue)',head:'Agent Lifecycle & Observability, demo-ready',desc:'The approved V9 lifecycle surface on real APIs, ahead of staging exposure.',note:'Re-scoped 15 Jul: HUMAIN Code and Guardian are out of LEAP; S7 doubles down on the lifecycle + observability surface Andrew approved.',show:['Agent Lifecycle: approved design (V9)','Observability in the submit flow and beyond','Sandbox re-configure in place (TR3-2.1)'],backed:'Observability 997 · Group 4 L0 1898–1903 · FE 733 · DeployNow'},
+ {sp:'S8',dt:'10–21 Aug',acc:'var(--purple)',status:'LEAP LAUNCH',scol:'var(--purple)',head:'Two-sided marketplace, governed lifecycle',desc:'The full LEAP story, from publish to procure.',show:['Submit agent flow, end to end','Agent Lifecycle + Observability (approved V9 pattern)','Public Marketplace (separate URL): discover, procure, reuse','HUMAIN agents: Meeting, Trip, Translation'],backed:'Public Marketplace · Publish · Observability 997 · Reference cases'},
 ];
 const cc=document.getElementById('cards');
 cards.forEach(c=>{
@@ -296,7 +297,7 @@ const blockers={
  S6:[
   {b:'LEAP demo scope was unconfirmed, and the Agent Lifecycle / Observability page needed soft approval before the staging URL could be exposed to HUMAIN (target end of July / early August).',
    c:'Reviewed the three observability mockups with Andrew (15 Jul) and locked LEAP demo scope. In: submit agent flow, agent lifecycle, observability in the mockup pattern (in-flow and beyond), public marketplace for acquisition on a separate URL. Out: HUMAIN Code and Guardian certification.',
-   i:'Section G narrows to DeployNow only for LEAP; Code→ALM and Guardian move post-LEAP. S7 demo re-focused from HUMAIN-native tooling to Lifecycle &amp; Observability and upgraded from STRETCH to COMMITTED. S8 LEAP card now lists the four agreed items.',
+   i:'Section G narrows to DeployNow only for LEAP; Code→ALM and Guardian move post-LEAP. HUMAIN Workspace publish also drops out of LEAP; Public Marketplace (separate URL) takes its slot — scope &amp; design by Ritwik in S6, build picked up S7. V9 locked as the approved developer-flow mockup. S7 demo re-focused to Lifecycle &amp; Observability and upgraded from STRETCH to COMMITTED.',
    s:'resolved'},
  ],S7:[],S8:[],
 };
