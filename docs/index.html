@@ -124,10 +124,10 @@
   <div class="top">
     <div>
       <h1>Roadmap to LEAP</h1>
-      <p class="sub">HUMAIN ONE · Today to end of August 2026 · from the live board</p>
+      <p class="sub">HUMAIN ONE · Today to end of August 2026 · re-timed from live JIRA · 15 Jul</p>
     </div>
     <div class="badge">
-      <div>Internal delivery · <b>end-July</b></div>
+      <div>Internal delivery · <b>end-July</b> · <span style="color:var(--yellow)">at risk — 25 portal / 16 H2O-O issues open</span></div>
       <div class="leap"><b>LEAP launch · end-August</b></div>
     </div>
   </div>
@@ -183,31 +183,31 @@ const SP={1:{n:'Sprint 4',d:'15–26 Jun',demo:'Dev UX'},2:{n:'Sprint 5',d:'29 J
 // bar: {c:startCol1-5, span, cls, text, half:'top'|'bot'}
 const sections=[
  {k:'A',t:'A · PRODUCT & PORTAL (FE)',epics:[
-   {n:'V05 Portal: HUMAIN ONE',id:'1106',mk:'prog',href:'https://ritwik-turing.github.io/humain-one/Humain1_Revamp_V03.html',bars:[{c:1,span:3,cls:'green',text:'Build V05 journey'}]},
-   {n:'V05 backend APIs (new epic)',id:'1182',mk:'prog',href:'#',bars:[{c:1,span:1,cls:'yellow',text:'Scope'},{c:2,span:1,cls:'green',text:'Build endpoints'}]},
+   {n:'V05 Portal: HUMAIN ONE',id:'1106',mk:'prog',href:'https://ritwik-turing.github.io/humain-one/Humain1_Revamp_V03.html',bars:[{c:1,span:4,cls:'green',text:'Build V05 journey · 25 open'}]},
+   {n:'V05 backend APIs (new epic)',id:'1182',mk:'prog',href:'#',bars:[{c:1,span:1,cls:'yellow',text:'Scope'},{c:2,span:3,cls:'green',text:'Build endpoints · 10 open'}]},
    {n:'HUMAIN Workspace publish',id:'',mk:'todo',star:true,href:'#',bars:[{c:3,span:1,cls:'yellow',text:'Scope'},{c:4,span:2,cls:'blue',text:'Build publish'}]},
    {n:'Public Marketplace (separate URL)',id:'',mk:'todo',href:'#',bars:[{c:3,span:1,cls:'yellow',text:'Scope'},{c:4,span:2,cls:'blue',text:'Build storefront'}]},
  ]},
  {k:'B',t:'B · ALM CORE & SANDBOX LIFECYCLE',epics:[
-   {n:'Sandbox Definition & Lifecycle',id:'524',mk:'prog',href:'https://docs.google.com/document/d/1bf-_yHkRdT0EmJo6IgSn7nBdPFaJfH8URGEVvD_zbu4',bars:[{c:1,span:2,cls:'green',text:'Provision · delete · health'}]},
-   {n:'Agent Registry',id:'467',mk:'todo',href:'#',bars:[{c:2,span:1,cls:'green',text:'Registry'}]},
+   {n:'Sandbox Definition & Lifecycle',id:'524',mk:'prog',href:'https://docs.google.com/document/d/1bf-_yHkRdT0EmJo6IgSn7nBdPFaJfH8URGEVvD_zbu4',bars:[{c:1,span:2,cls:'green',text:'Provision · delete · health'},{c:3,span:2,cls:'green',text:'Update / re-config · 11 open · 1 blocked'}]},
+   {n:'Agent Registry',id:'467',mk:'cb',href:'#',bars:[{c:2,span:1,cls:'green',text:'Registry ✓ done'}]},
    {n:'Reference Agents ×3: Meeting / Trip / Translation',id:'',mk:'todo',href:'#',bars:[{c:1,span:2,cls:'yellow',text:'Scope'},{c:3,span:1,cls:'green',text:'Develop'},{c:4,span:2,cls:'blue',text:'Run ALM'}]},
    {n:'Agent Harnesses',id:'new',mk:'todo',href:'#',bars:[{c:1,span:2,cls:'yellow',text:'Scope',half:'top'},{c:2,span:2,cls:'green',text:'Develop',half:'bot'}]},
  ]},
  {k:'C',t:'C · SUBSTRATE & INFRASTRUCTURE',epics:[
-   {n:'H2O-O Integration',id:'228',mk:'prog',href:'https://docs.google.com/document/d/1nPRJPitTWQYA7rWoqo0FJoSIMCQRyMN6Zxd3EniaUs4',refs:[{t:'v0.3 API guide',u:'https://docs.google.com/document/d/1VSVHs8PvheD9tYxbzCrIXcoFae23YXGw/edit'}],bars:[{c:1,span:2,cls:'green',text:'Runtime / substrate integration'}]},
+   {n:'H2O-O Integration',id:'228',mk:'prog',href:'https://docs.google.com/document/d/1nPRJPitTWQYA7rWoqo0FJoSIMCQRyMN6Zxd3EniaUs4',refs:[{t:'v0.3 API guide',u:'https://docs.google.com/document/d/1VSVHs8PvheD9tYxbzCrIXcoFae23YXGw/edit'}],bars:[{c:1,span:2,cls:'green',text:'Runtime / substrate integration'},{c:3,span:2,cls:'green',text:'Integration cont. · 16 open · 1 blocked'}]},
    {n:'Terraform / IaC 230 · CI/CD ✓ 229',id:'',mk:'prog',href:'#',refs:[{t:'AWS→GCP migration',u:'https://docs.google.com/document/d/1NMIGcS7gwDq02faBV2J_zZ5ShFtD2xm5balyo3Gqfiw/edit'}],bars:[{c:1,span:2,cls:'green',text:'Terraform / IaC (GKE in S4)'}]},
  ]},
  {k:'D',t:'D · GOVERNANCE & IDENTITY (ANDREW)',epics:[
-   {n:'Control Plane + Keycloak identity',id:'1107',mk:'todo',href:'https://docs.google.com/presentation/d/1HT8tldIWvf9uwIA5nnzrZ9iZPOuyNeeBv2SA0ehFukU',bars:[{c:1,span:2,cls:'green',text:'C1–C3 + identity (dev→prod)'}]},
-   {n:'Security Hardening',id:'112',mk:'todo',href:'#',bars:[{c:4,span:2,cls:'blue',text:'Harden for launch'}]},
+   {n:'Control Plane + Keycloak identity',id:'1107',mk:'prog',href:'https://docs.google.com/presentation/d/1HT8tldIWvf9uwIA5nnzrZ9iZPOuyNeeBv2SA0ehFukU',bars:[{c:1,span:3,cls:'green',text:'C1–C3 + identity (dev→prod) · 4 open'}]},
+   {n:'Security Hardening',id:'112',mk:'todo',href:'#',bars:[{c:4,span:2,cls:'blue',text:'Harden for launch · 10 open'}]},
  ]},
  {k:'E',t:'E · EVALUATION & QA',epics:[
-   {n:'Real Prism integration: Evaluate',id:'111',mk:'todo',href:'#',refs:[{t:'Eval options',u:'https://docs.google.com/document/d/1LcC0nOQ7hInbdwGxbYAJL6XV7szcO-BgMYXRLckHw3A/edit?tab=t.0'},{t:'Prism discussion',u:'https://docs.google.com/document/d/1fhkFb-gp0DussgNgvhn2-5iDPYsnmHjXdDA242kTPKs/edit?tab=t.egn81b42tf5'}],bars:[{c:3,span:2,cls:'green',text:'Prism eval'}]},
+   {n:'Real Prism integration: Evaluate',id:'111',mk:'prog',href:'#',refs:[{t:'Eval options',u:'https://docs.google.com/document/d/1LcC0nOQ7hInbdwGxbYAJL6XV7szcO-BgMYXRLckHw3A/edit?tab=t.0'},{t:'Prism discussion',u:'https://docs.google.com/document/d/1fhkFb-gp0DussgNgvhn2-5iDPYsnmHjXdDA242kTPKs/edit?tab=t.egn81b42tf5'}],bars:[{c:3,span:2,cls:'green',text:'Prism eval'}]},
    {n:'QA Workflow Operationalization',id:'1108',mk:'todo',href:'#',bars:[{c:3,span:3,cls:'green',text:'QA workflow'}]},
  ]},
  {k:'F',t:'F · OBSERVABILITY',epics:[
-   {n:'Observability: usage / safety / audit / logs',id:'997',mk:'prog',href:'https://docs.google.com/spreadsheets/d/1UV2PHQnavYSFqYGPYGEaDhL4eus-UlmIt8Ix4mi4I08/edit?usp=sharing',refs:[{t:'Mock V10 · aligned',u:'https://ritwik-turing.github.io/humain-one/Agent_Lifecycle_V10.html'},{t:'V9 dense',u:'https://ritwik-turing.github.io/humain-one/Agent_Lifecycle_V9.html'},{t:'V8',u:'https://ritwik-turing.github.io/humain-one/Agent_Lifecycle_V8.html'}],bars:[{c:1,span:3,cls:'green',text:'Usage · safety · tracing · audit · logs'}]},
+   {n:'Observability: usage / safety / audit / logs',id:'997',mk:'prog',href:'https://docs.google.com/spreadsheets/d/1UV2PHQnavYSFqYGPYGEaDhL4eus-UlmIt8Ix4mi4I08/edit?usp=sharing',refs:[{t:'Mock V10 · aligned',u:'https://ritwik-turing.github.io/humain-one/Agent_Lifecycle_V10.html'},{t:'V9 dense',u:'https://ritwik-turing.github.io/humain-one/Agent_Lifecycle_V9.html'},{t:'V8',u:'https://ritwik-turing.github.io/humain-one/Agent_Lifecycle_V8.html'}],bars:[{c:1,span:3,cls:'green',text:'Usage · safety · tracing · audit · logs',half:'top'},{c:3,span:2,cls:'green',text:'Group 4 L0 build (1898–1903) · 13 open',half:'bot'}]},
    {n:'Agent perf metrics · cost · KPI',id:'',mk:'prog',href:'https://docs.google.com/document/d/1UKecvJOJ4PDbXZYpMLH09DuOTES7xy2qZG1E6erfjtI/edit',bars:[{c:1,span:3,cls:'yellow',text:'Scope · P1 done'}]},
  ]},
  {k:'G',t:'G · HUMAIN PLATFORM INTEGRATION  (CODE & GUARDIAN OUT OF LEAP SCOPE — ANDREW, 15 JUL)',epics:[
