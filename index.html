@@ -132,6 +132,15 @@
     </div>
   </div>
 
+  <div class="badge" style="margin-top:12px;white-space:normal;font-size:12px;line-height:1.7">
+    <b>LEAP demo scope · agreed with Andrew · 15 Jul:</b>
+    <span style="color:var(--green);font-weight:800">IN</span>
+    Submit agent flow · Agent Lifecycle · Observability (mockup pattern, in the submit flow and beyond) · Public Marketplace for agent acquisition (separate URL)
+    &nbsp;·&nbsp;
+    <span style="color:var(--yellow);font-weight:800">OUT</span>
+    HUMAIN Code · HUMAIN Guardian certification
+  </div>
+
   <div class="sheet">
     <div class="hrow">
       <div class="lab">WORKSTREAM / EPIC</div>
@@ -151,7 +160,7 @@
       <span><span class="sw" style="background:var(--future)"></span>Future</span>
       <span style="color:var(--dim)">○ to-do &nbsp; ◐ in progress &nbsp; ★ CEO priority</span>
     </div>
-    <div class="defer"><b>Deferred to Phase 2 / post-LEAP:</b> Tenant-aware 468 · Multi-runtime 175 · Track B 176 · App Blueprints 349 · External Collaborator Workspace 232 · Mock Substrate 469 · GKE Migration 231 · Spec Lock 174 · Gap Closure 173</div>
+    <div class="defer"><b>Deferred to Phase 2 / post-LEAP:</b> HUMAIN Code→ALM (out of LEAP, 15 Jul) · Guardian certification (out of LEAP, 15 Jul) · Tenant-aware 468 · Multi-runtime 175 · Track B 176 · App Blueprints 349 · External Collaborator Workspace 232 · Mock Substrate 469 · GKE Migration 231 · Spec Lock 174 · Gap Closure 173</div>
     <div class="note">Tip: epic names are links once mapped. Hover shows the linked ones in blue.</div>
   </div>
 
@@ -170,7 +179,7 @@
 
 <script>
 const C={green:'green',yellow:'yellow',blue:'blue',found:'found',future:'future'};
-const SP={1:{n:'Sprint 4',d:'15–26 Jun',demo:'Dev UX'},2:{n:'Sprint 5',d:'29 Jun–10 Jul',demo:'Observability'},3:{n:'Sprint 6',d:'13–24 Jul',demo:'Golden path'},4:{n:'Sprint 7',d:'27 Jul–7 Aug',demo:'HUMAIN-native'},5:{n:'Sprint 8',d:'10–21 Aug',demo:'Marketplace'}};
+const SP={1:{n:'Sprint 4',d:'15–26 Jun',demo:'Dev UX'},2:{n:'Sprint 5',d:'29 Jun–10 Jul',demo:'Observability'},3:{n:'Sprint 6',d:'13–24 Jul',demo:'Golden path'},4:{n:'Sprint 7',d:'27 Jul–7 Aug',demo:'Lifecycle & Obs'},5:{n:'Sprint 8',d:'10–21 Aug',demo:'Marketplace'}};
 // bar: {c:startCol1-5, span, cls, text, half:'top'|'bot'}
 const sections=[
  {k:'A',t:'A · PRODUCT & PORTAL (FE)',epics:[
@@ -198,18 +207,18 @@ const sections=[
    {n:'QA Workflow Operationalization',id:'1108',mk:'todo',href:'#',bars:[{c:3,span:3,cls:'green',text:'QA workflow'}]},
  ]},
  {k:'F',t:'F · OBSERVABILITY',epics:[
-   {n:'Observability: usage / safety / audit / logs',id:'997',mk:'prog',href:'https://docs.google.com/spreadsheets/d/1UV2PHQnavYSFqYGPYGEaDhL4eus-UlmIt8Ix4mi4I08/edit?usp=sharing',bars:[{c:1,span:3,cls:'green',text:'Usage · safety · tracing · audit · logs'}]},
+   {n:'Observability: usage / safety / audit / logs',id:'997',mk:'prog',href:'https://docs.google.com/spreadsheets/d/1UV2PHQnavYSFqYGPYGEaDhL4eus-UlmIt8Ix4mi4I08/edit?usp=sharing',refs:[{t:'Mock V10 · aligned',u:'https://ritwik-turing.github.io/humain-one/Agent_Lifecycle_V10.html'},{t:'V9 dense',u:'https://ritwik-turing.github.io/humain-one/Agent_Lifecycle_V9.html'},{t:'V8',u:'https://ritwik-turing.github.io/humain-one/Agent_Lifecycle_V8.html'}],bars:[{c:1,span:3,cls:'green',text:'Usage · safety · tracing · audit · logs'}]},
    {n:'Agent perf metrics · cost · KPI',id:'',mk:'prog',href:'https://docs.google.com/document/d/1UKecvJOJ4PDbXZYpMLH09DuOTES7xy2qZG1E6erfjtI/edit',bars:[{c:1,span:3,cls:'yellow',text:'Scope · P1 done'}]},
  ]},
- {k:'G',t:'G · HUMAIN PLATFORM INTEGRATION  (ASPIRATIONAL · SCOPE JUL → BUILD AUG)',epics:[
-   {n:'HUMAIN Code → ALM (no YAML upload)',id:'new',mk:'todo',href:'https://docs.google.com/document/d/1kyyT6EaP0_MF-pkV0YWK4HC6CfgoRCwxyDDNNLUW4jc',bars:[{c:1,span:3,cls:'yellow',text:'Scope'},{c:4,span:2,cls:'blue',text:'Build integration'}]},
+ {k:'G',t:'G · HUMAIN PLATFORM INTEGRATION  (CODE & GUARDIAN OUT OF LEAP SCOPE — ANDREW, 15 JUL)',epics:[
+   {n:'HUMAIN Code → ALM (no YAML upload) — out of LEAP scope',id:'new',mk:'todo',href:'https://docs.google.com/document/d/1kyyT6EaP0_MF-pkV0YWK4HC6CfgoRCwxyDDNNLUW4jc',bars:[{c:1,span:3,cls:'yellow',text:'Scope'},{c:4,span:2,cls:'future',text:'Post-LEAP build'}]},
    {n:'DeployNow (replaces GCP sandbox)',id:'new',mk:'todo',href:'#',bars:[{c:1,span:3,cls:'yellow',text:'Scope'},{c:4,span:2,cls:'blue',text:'Build · cut over'}]},
-   {n:'HUMAIN Guardian: QA / certification',id:'new',mk:'todo',href:'#',bars:[{c:2,span:2,cls:'yellow',text:'Scope'},{c:5,span:1,cls:'blue',text:'Cert'}]},
+   {n:'HUMAIN Guardian: QA / certification — out of LEAP scope',id:'new',mk:'todo',href:'#',bars:[{c:2,span:2,cls:'yellow',text:'Scope'},{c:5,span:1,cls:'future',text:'Post-LEAP'}]},
  ]},
  {k:'H',t:'H · PROGRAMME & DEMO',epics:[
    {n:'Demo Prep',id:'671',mk:'prog',href:'https://turing.zoom.us/rec/share/o0y3-BKyRZDrXn7Jgrl3cGRRLY0vAXc6gRpYFQ23yAYx_-3NOtKMBAPYWEHlFEyF.rpvt0GVT0ARuVH_b',refs:[{t:'Demo plan',u:'https://docs.google.com/document/d/15Ikx4_lmpv0MKgGQmwypm1WbWAjZ-hWRZVkEdWwXLxM/edit?tab=t.0'},{t:'Recordings + creds',u:'https://docs.google.com/spreadsheets/d/1JCc5UNwaSGYw0MnNM1q48TaSLQZHTISHG-yqyyYSjMg/edit?gid=0#gid=0'}],demos:[
      {c:1,col:'var(--green)',t:'Dev UX'},{c:2,col:'var(--green)',t:'Observability'},
-     {c:3,col:'var(--amber)',t:'Golden path'},{c:4,col:'var(--blue)',t:'HUMAIN-native'},
+     {c:3,col:'var(--amber)',t:'Golden path'},{c:4,col:'var(--blue)',t:'Lifecycle & Obs'},
      {c:5,col:'var(--purple)',t:'Marketplace'}]},
    {n:'Product Strategy',id:'755',mk:'prog',href:'https://turing.zoom.us/rec/share/fWrS7YGujJVnAWQUR7WL5G2NK4Ral8BDsT5dTS61qcvRFL52IvTcxaLcPsRjStHV.VgcOiLBphKEVaiQW',bars:[{c:1,span:5,cls:'found',text:'Ongoing programme direction'}]},
  ]},
@@ -257,8 +266,8 @@ const cards=[
  {sp:'S4',dt:'15–26 Jun',acc:'var(--green)',status:'COMMITTED',scol:'var(--green)',head:'Developer flow, new UX, end to end',desc:'The redesigned V05 portal, front to back.',show:['Submit → configure → provision sandbox','Run Meeting Manager agent live','New developer UX, end to end'],backed:'V05 Portal 1106 · Sandbox 524 · Ref agents'},
  {sp:'S5',dt:'29 Jun–10 Jul',acc:'var(--green)',status:'COMMITTED',scol:'var(--green)',head:'Real-API lifecycle + observability (first cut)',desc:'Journey now driven by the V05 backend APIs.',show:['Portal on real V05 APIs, not mocks','Observability: usage, logs, tracing','Harnesses running the agents'],backed:'V05 APIs 1182 · Observability 997 · Harnesses'},
  {sp:'S6',dt:'13–24 Jul',acc:'var(--amber)',status:'INTERNAL DELIVERY',scol:'var(--amber)',head:'Governed golden path, end to end',desc:'The governed lifecycle working internally.',show:['agent.yaml → Resolve & Plan (shows work)','Deploy → run → evidence','Prism eval wired in (stub if needed)'],backed:'Resolve V1 · Prism 111 · Registry 467 · Publish'},
- {sp:'S7',dt:'27 Jul–7 Aug',acc:'var(--blue)',status:'STRETCH',scol:'var(--blue)',head:'HUMAIN-native deploy + QA',desc:'Uses HUMAIN’s own tools.',note:'HUMAIN Code = HUMAIN’s native authoring environment. Code → deployed ALM agent with no manual agent.yaml upload.',show:['HUMAIN Code → ALM, no YAML upload','DeployNow replaces GCP sandbox','Guardian cert + QA workflow'],backed:'HUMAIN Code→ALM · DeployNow · Guardian · QA 1108'},
- {sp:'S8',dt:'10–21 Aug',acc:'var(--purple)',status:'LEAP LAUNCH',scol:'var(--purple)',head:'Two-sided marketplace, governed lifecycle',desc:'The full LEAP story, from publish to procure.',show:['Publish agent + trust evidence','Discover, procure & reuse','HUMAIN agents: Meeting, Trip, Translation'],backed:'Public Marketplace · Publish · Reference cases'},
+ {sp:'S7',dt:'27 Jul–7 Aug',acc:'var(--blue)',status:'COMMITTED',scol:'var(--blue)',head:'Agent Lifecycle & Observability, demo-ready',desc:'The aligned lifecycle surface on real APIs, ahead of staging exposure.',note:'Re-scoped 15 Jul: HUMAIN Code and Guardian are out of LEAP; S7 doubles down on the lifecycle + observability surface Andrew approved.',show:['Agent Lifecycle: aligned design (from the 3 mockups)','Observability in the submit flow and beyond','Sandbox re-configure in place (TR3-2.1)'],backed:'Observability 997 · Group 4 L0 1898–1903 · FE 733 · DeployNow'},
+ {sp:'S8',dt:'10–21 Aug',acc:'var(--purple)',status:'LEAP LAUNCH',scol:'var(--purple)',head:'Two-sided marketplace, governed lifecycle',desc:'The full LEAP story, from publish to procure.',show:['Submit agent flow, end to end','Agent Lifecycle + Observability, mockup pattern','Public Marketplace (separate URL): discover, procure, reuse','HUMAIN agents: Meeting, Trip, Translation'],backed:'Public Marketplace · Publish · Observability 997 · Reference cases'},
 ];
 const cc=document.getElementById('cards');
 cards.forEach(c=>{
@@ -283,7 +292,13 @@ const blockers={
    i:'879 dropped from S4; agent-run lifecycle re-based on 1114; 880 (log streaming) and 881 (E2E lifecycle test) now blocked by 1114. Hits Sandbox Definition &amp; Lifecycle (E1 / 524) and the run-lifecycle demo.',
    s:'ongoing'},
  ],
- S5:[],S6:[],S7:[],S8:[],
+ S5:[],
+ S6:[
+  {b:'LEAP demo scope was unconfirmed, and the Agent Lifecycle / Observability page needed soft approval before the staging URL could be exposed to HUMAIN (target end of July / early August).',
+   c:'Reviewed the three observability mockups with Andrew (15 Jul) and locked LEAP demo scope. In: submit agent flow, agent lifecycle, observability in the mockup pattern (in-flow and beyond), public marketplace for acquisition on a separate URL. Out: HUMAIN Code and Guardian certification.',
+   i:'Section G narrows to DeployNow only for LEAP; Code→ALM and Guardian move post-LEAP. S7 demo re-focused from HUMAIN-native tooling to Lifecycle &amp; Observability and upgraded from STRETCH to COMMITTED. S8 LEAP card now lists the four agreed items.',
+   s:'resolved'},
+ ],S7:[],S8:[],
 };
 const blk=document.getElementById('blk');
 ['S4','S5','S6','S7','S8'].forEach(sp=>{
