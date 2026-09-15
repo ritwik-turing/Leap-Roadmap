@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HUMAIN ONE Roadmap to LEAP (interactive)</title>
+<title>HUMAIN ONE Roadmap, after the evaluation turn (interactive)</title>
 <style>
   :root{
     --bg:#0C1322; --panel:#121C2E; --band:#172643; --border:#24324E; --grid:#2A3B5C;
@@ -117,111 +117,133 @@
   .tag.ongoing{background:rgba(83,144,255,.16);color:var(--blue)}
   .blk-empty{color:var(--dim);font-size:12px;padding:6px 2px 8px;font-style:italic}
   @media(max-width:900px){.cards{grid-template-columns:1fr 1fr}.row,.hrow{grid-template-columns:160px repeat(5,1fr)}:root{--label-w:160px}}
+  /* links */
+  .links{margin-top:34px}
+  .links h2{font-size:22px;font-weight:800;margin:0 0 2px}
+  .lgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:16px}
+  .lcard{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:12px 13px 8px}
+  .lcard .lg{font-size:9px;font-weight:800;letter-spacing:.06em;color:var(--dim);text-transform:uppercase;margin-bottom:8px}
+  .lcard a.lk{display:block;text-decoration:none;color:var(--white);padding:7px 0;border-top:1px solid rgba(42,59,92,.4)}
+  .lcard a.lk:first-of-type{border-top:none}
+  .lcard a.lk b{display:block;font-size:12px;color:#bcd2ff}
+  .lcard a.lk span{display:block;font-size:10.5px;color:var(--mute);margin-top:2px}
+  .lcard a.lk:hover b{text-decoration:underline}
+  @media(max-width:900px){.lgrid{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="top">
     <div>
-      <h1>Roadmap to LEAP</h1>
-      <p class="sub">HUMAIN ONE · Today to end of August 2026 · re-timed from live JIRA · 15 Jul</p>
+      <h1>Roadmap after the evaluation turn</h1>
+      <p class="sub">HUMAIN ONE · Sprint 9 to Sprint 13 and beyond · from sprint records and decision notes · 15 Sep 2026 · <a href="roadmap-2026-07-15.html" style="color:#bcd2ff">July version ↗</a></p>
     </div>
     <div class="badge">
-      <div>Internal delivery · <b>end-July</b> · <span style="color:var(--yellow)">at risk — 25 portal / 16 H2O-O issues open</span></div>
-      <div class="leap"><b>LEAP launch · end-August</b></div>
+      <div>Now · <b>Sprint 10 · 7–18 Sep</b> · <span style="color:var(--green)">Evaluations hub inside the portal</span></div>
+      <div class="leap"><b>Live on Pages · shell V45 · engine V95 · 15 Sep</b></div>
     </div>
   </div>
 
   <div class="badge" style="margin-top:12px;white-space:normal;font-size:12px;line-height:1.7">
-    <b>LEAP demo scope · agreed with Andrew · 15 Jul:</b>
-    <span style="color:var(--green);font-weight:800">IN</span>
-    Submit agent flow · Agent Lifecycle · Observability (mockup pattern, in the submit flow and beyond) · Public Marketplace for agent acquisition (separate URL)
+    <b>Evaluation first · Yasir, 24 Aug:</b>
+    <span style="color:var(--green);font-weight:800">SPINE</span>
+    Evaluate, step 6 of the developer journey, is the centre of the product
     &nbsp;·&nbsp;
-    <span style="color:var(--yellow);font-weight:800">OUT</span>
-    HUMAIN Code · HUMAIN Guardian certification · HUMAIN Workspace publish
-    &nbsp;·&nbsp; Approved dev-flow mockup: <a href="https://ritwik-turing.github.io/humain-one/Agent_Lifecycle_V9.html" target="_blank" rel="noopener" style="color:#bcd2ff">V9 ↗</a>
+    <span style="color:var(--blue);font-weight:800">NEXT, IN ORDER</span>
+    Certification (verifier persona) · Observability metrics · Tenant admin flow · Marketplace integration · Agent creation (HUMAIN Code)
+    &nbsp;·&nbsp;
+    <span style="color:var(--yellow);font-weight:800">SETTLED</span>
+    No pass bar · zero metrics attached at start · cost from tokens only · never edit a sent version
+    &nbsp;·&nbsp; Narrative version: <a href="roadmap-2026-09-15.html" target="_blank" rel="noopener" style="color:#bcd2ff">Roadmap, 15 Sep ↗</a>
   </div>
 
   <div class="sheet">
     <div class="hrow">
       <div class="lab">WORKSTREAM / EPIC</div>
-      <div class="col"><a class="s" href="https://docs.google.com/spreadsheets/d/1BsmGCPubSY-L-CfiwMDoZlOHEsytI3chl5TpTnxU12o/edit?gid=795769576#gid=795769576" target="_blank" rel="noopener" style="color:#bcd2ff;text-decoration:none">Sprint 4 ↗</a><div class="d">15–26 Jun</div></div>
-      <div class="col"><span class="s">Sprint 5</span><div class="d">29 Jun–10 Jul</div></div>
-      <div class="col"><span class="s">Sprint 6</span><div class="d">13–24 Jul <span class="mk">▾end-Jul</span></div></div>
-      <div class="col"><span class="s">Sprint 7</span><div class="d">27 Jul–7 Aug</div></div>
-      <div class="col"><span class="s">Sprint 8</span><div class="d">10–21 Aug <span class="mkl">▾LEAP</span></div></div>
+      <div class="col"><span class="s">Sprint 9</span><div class="d">24 Aug–4 Sep <span class="mk">▾eval turn</span></div></div>
+      <div class="col"><span class="s">Sprint 10</span><div class="d">7–18 Sep <span class="mk">▾now</span></div></div>
+      <div class="col"><span class="s">Sprint 11</span><div class="d">21 Sep–2 Oct</div></div>
+      <div class="col"><span class="s">Sprint 12</span><div class="d">5–16 Oct</div></div>
+      <div class="col"><span class="s">Sprint 13 +</span><div class="d">from 19 Oct <span class="mkl">▾LEAP prep</span></div></div>
     </div>
     <div id="grid"></div>
 
     <div class="legend">
-      <span><span class="sw" style="background:var(--green)"></span>Build to end-July</span>
-      <span><span class="sw" style="background:var(--yellow)"></span>Scope (Jul)</span>
-      <span><span class="sw" style="background:var(--blue)"></span>Implement (Aug)</span>
-      <span><span class="sw" style="background:var(--found)"></span>Foundational</span>
-      <span><span class="sw" style="background:var(--future)"></span>Future</span>
-      <span style="color:var(--dim)">○ to-do &nbsp; ◐ in progress &nbsp; ★ CEO priority</span>
+      <span><span class="sw" style="background:var(--green)"></span>Built or building</span>
+      <span><span class="sw" style="background:var(--yellow)"></span>Decision or scope needed</span>
+      <span><span class="sw" style="background:var(--blue)"></span>Planned build</span>
+      <span><span class="sw" style="background:var(--found)"></span>Ongoing</span>
+      <span><span class="sw" style="background:var(--future)"></span>Later</span>
+      <span style="color:var(--dim)">○ to-do &nbsp; ◐ in progress &nbsp; ● done &nbsp; ★ decision on the critical path</span>
     </div>
-    <div class="defer"><b>Deferred to Phase 2 / post-LEAP:</b> HUMAIN Code→ALM (out of LEAP, 15 Jul) · Guardian certification (out of LEAP, 15 Jul) · Tenant-aware 468 · Multi-runtime 175 · Track B 176 · App Blueprints 349 · External Collaborator Workspace 232 · Mock Substrate 469 · GKE Migration 231 · Spec Lock 174 · Gap Closure 173</div>
-    <div class="note">Tip: epic names are links once mapped. Hover shows the linked ones in blue.</div>
+    <div class="defer"><b>Sequencing from Sprint 11 is proposed, not committed in Jira.</b> Sprint 9 and 10 are from the sprint records. Three items are blocked on a decision rather than build time and carry a ★: the verifier persona, HUMAIN's tenant and identity contract, and who owns agent code generation.</div>
+    <div class="note">Tip: epic names link to the live prototype or document where one exists. Hover a bar for its window; click a bar with a ticket to open Jira.</div>
   </div>
 
   <div class="blockers">
     <h2>Blockers &amp; Changes by Sprint</h2>
-    <p class="sub">Humain-specific blockers that changed the sprint or roadmap. What blocked us, what we changed, and the impact. Click a sprint to expand.</p>
+    <p class="sub">What changed the sprint or the roadmap, Sprint 6 to Sprint 10. What blocked us, what we changed, and the impact. Click a sprint to expand.</p>
     <div id="blk"></div>
   </div>
 
   <div class="demos">
     <h2>Sprint-End Demos</h2>
-    <p class="sub">What we demo at the end of each sprint · S4 → LEAP (end-August)</p>
+    <p class="sub">What we show at the end of each sprint · S9 → S13</p>
     <div class="cards" id="cards"></div>
+  </div>
+
+  <div class="links">
+    <h2>Prototypes and documents</h2>
+    <p class="sub">Everything live, no login. Versions are kept, never overwritten, so older links keep working.</p>
+    <div class="lgrid" id="links"></div>
   </div>
 </div>
 
 <script>
-const C={green:'green',yellow:'yellow',blue:'blue',found:'found',future:'future'};
-const SP={1:{n:'Sprint 4',d:'15–26 Jun',demo:'Dev UX'},2:{n:'Sprint 5',d:'29 Jun–10 Jul',demo:'Observability'},3:{n:'Sprint 6',d:'13–24 Jul',demo:'Golden path'},4:{n:'Sprint 7',d:'27 Jul–7 Aug',demo:'Lifecycle & Obs'},5:{n:'Sprint 8',d:'10–21 Aug',demo:'Marketplace'}};
+const SP={1:{n:'Sprint 9',d:'24 Aug–4 Sep',demo:'Eval V13'},2:{n:'Sprint 10',d:'7–18 Sep',demo:'Hub and console'},3:{n:'Sprint 11',d:'21 Sep–2 Oct',demo:'Hardened evals and verifier queue'},4:{n:'Sprint 12',d:'5–16 Oct',demo:'Tenant and marketplace'},5:{n:'Sprint 13 +',d:'from 19 Oct',demo:'End to end loop'}};
+const H='https://ritwik-turing.github.io/humain-one/';
 // bar: {c:startCol1-5, span, cls, text, half:'top'|'bot'}
 const sections=[
- {k:'A',t:'A · PRODUCT & PORTAL (FE)',epics:[
-   {n:'V05 Portal: HUMAIN ONE',id:'1106',mk:'prog',href:'https://ritwik-turing.github.io/humain-one/Humain1_Revamp_V03.html',bars:[{c:1,span:4,cls:'green',text:'Build V05 journey · 25 open'}]},
-   {n:'V05 backend APIs (new epic)',id:'1182',mk:'prog',href:'#',bars:[{c:1,span:1,cls:'yellow',text:'Scope'},{c:2,span:3,cls:'green',text:'Build endpoints · 10 open'}]},
-   {n:'HUMAIN Workspace publish — out of LEAP scope',id:'',mk:'todo',href:'#',bars:[{c:5,span:1,cls:'future',text:'Post-LEAP'}]},
-   {n:'Public Marketplace (separate URL) — LEAP scope',id:'',mk:'prog',star:true,href:'#',bars:[{c:3,span:1,cls:'yellow',text:'Scope & design · Ritwik · this week'},{c:4,span:2,cls:'blue',text:'Build storefront · picked up S7'}]},
+ {k:'A',t:'A · EVALUATION, THE SPINE',epics:[
+   {n:'Eval engine: datasets, metrics, experiment sets, evaluations, results, review, compare, evidence',id:'',mk:'prog',href:H+'Eval_Journey_V95.html',refs:[{t:'V95 live',u:H+'Eval_Journey_V95.html'},{t:'Guided demo V64',u:H+'Eval_Guided_Demo_V64.html'},{t:'How it works',u:H+'Eval_Platform_How_It_Works.html'}],bars:[{c:1,span:1,cls:'green',text:'V1 to V13 · standalone'},{c:2,span:1,cls:'green',text:'V62 to V110 · hub + console'}]},
+   {n:'Portal shell: Evaluations hub, submit pickers, run console on the agent',id:'',mk:'prog',href:H+'Agent_Lifecycle_V45.html',refs:[{t:'V45 live',u:H+'Agent_Lifecycle_V45.html'},{t:'Hub decisions 13 Sep',u:'roadmap-2026-09-15.html'}],bars:[{c:2,span:1,cls:'green',text:'V13 to V70 · hub in the portal'}]},
+   {n:'Evaluations hardened: summary, comparison, traces, metric versioning, playground',id:'',mk:'todo',href:'#',bars:[{c:2,span:1,cls:'yellow',text:'14 Sep review list',half:'top'},{c:2,span:2,cls:'green',text:'Fix and ship',half:'bot'}]},
+   {n:'Custom code execution in metrics: security and architecture call',id:'',mk:'todo',star:true,href:'#',bars:[{c:2,span:2,cls:'yellow',text:'Due diligence with Youanka · plan to the group'}]},
+   {n:'Naming of evaluation constructs aligned across products (LangSmith reference from Irene)',id:'',mk:'todo',href:'#',bars:[{c:2,span:2,cls:'yellow',text:'Finalise names · bi-weekly with Irene'}]},
  ]},
- {k:'B',t:'B · ALM CORE & SANDBOX LIFECYCLE',epics:[
-   {n:'Sandbox Definition & Lifecycle',id:'524',mk:'prog',href:'https://docs.google.com/document/d/1bf-_yHkRdT0EmJo6IgSn7nBdPFaJfH8URGEVvD_zbu4',bars:[{c:1,span:2,cls:'green',text:'Provision · delete · health'},{c:3,span:2,cls:'green',text:'Update / re-config · 11 open · 1 blocked'}]},
-   {n:'Agent Registry',id:'467',mk:'cb',href:'#',bars:[{c:2,span:1,cls:'green',text:'Registry ✓ done'}]},
-   {n:'Reference Agents ×3: Meeting / Trip / Translation',id:'',mk:'todo',href:'#',bars:[{c:1,span:2,cls:'yellow',text:'Scope'},{c:3,span:1,cls:'green',text:'Develop'},{c:4,span:2,cls:'blue',text:'Run ALM'}]},
-   {n:'Agent Harnesses',id:'new',mk:'todo',href:'#',bars:[{c:1,span:2,cls:'yellow',text:'Scope',half:'top'},{c:2,span:2,cls:'green',text:'Develop',half:'bot'}]},
+ {k:'B',t:'B · CERTIFICATION AND THE VERIFIER PERSONA',epics:[
+   {n:'Submit for verification writes the record from the Evaluations tab',id:'',mk:'todo',href:'#',bars:[{c:3,span:1,cls:'green',text:'Record at exact versions'}]},
+   {n:'Verifier persona: who reviews, in which queue',id:'',mk:'todo',star:true,href:H+'Tenant_Admin_Console_V4.html',bars:[{c:3,span:1,cls:'yellow',text:'Decision · overruled 11 Aug'}]},
+   {n:'Verifier queue and review: evidence, decide, certify or send back',id:'',mk:'todo',href:H+'Tenant_Admin_Console_V4.html',refs:[{t:'Console V4 queue',u:H+'Tenant_Admin_Console_V4.html'}],bars:[{c:3,span:2,cls:'blue',text:'Queue → evidence → decision on the agent and the badge'}]},
+   {n:'Guardian certification',id:'',mk:'todo',href:'#',bars:[{c:5,span:1,cls:'future',text:'Pending Guardian'}]},
  ]},
- {k:'C',t:'C · SUBSTRATE & INFRASTRUCTURE',epics:[
-   {n:'H2O-O Integration',id:'228',mk:'prog',href:'https://docs.google.com/document/d/1nPRJPitTWQYA7rWoqo0FJoSIMCQRyMN6Zxd3EniaUs4',refs:[{t:'v0.3 API guide',u:'https://docs.google.com/document/d/1VSVHs8PvheD9tYxbzCrIXcoFae23YXGw/edit'}],bars:[{c:1,span:2,cls:'green',text:'Runtime / substrate integration'},{c:3,span:2,cls:'green',text:'Integration cont. · 16 open · 1 blocked'}]},
-   {n:'Terraform / IaC 230 · CI/CD ✓ 229',id:'',mk:'prog',href:'#',refs:[{t:'AWS→GCP migration',u:'https://docs.google.com/document/d/1NMIGcS7gwDq02faBV2J_zZ5ShFtD2xm5balyo3Gqfiw/edit'}],bars:[{c:1,span:2,cls:'green',text:'Terraform / IaC (GKE in S4)'}]},
+ {k:'C',t:'C · OBSERVABILITY METRICS',epics:[
+   {n:'Trace view reformatted to span and timeline (shared data model)',id:'',mk:'todo',href:'#',bars:[{c:2,span:2,cls:'green',text:'Span and timeline layout'}]},
+   {n:'Observability tab with real numbers: latency · tokens · cost · error rate per version',id:'',mk:'todo',href:'#',refs:[{t:'Spec written',u:'#'}],bars:[{c:3,span:2,cls:'blue',text:'Fed by evaluation runs and sandbox traffic'}]},
+   {n:'Version-to-version delta',id:'',mk:'todo',href:'#',bars:[{c:4,span:1,cls:'blue',text:'Delta view'}]},
  ]},
- {k:'D',t:'D · GOVERNANCE & IDENTITY (ANDREW)',epics:[
-   {n:'Control Plane + Keycloak identity',id:'1107',mk:'prog',href:'https://docs.google.com/presentation/d/1HT8tldIWvf9uwIA5nnzrZ9iZPOuyNeeBv2SA0ehFukU',bars:[{c:1,span:3,cls:'green',text:'C1–C3 + identity (dev→prod) · 4 open'}]},
-   {n:'Security Hardening',id:'112',mk:'todo',href:'#',bars:[{c:4,span:2,cls:'blue',text:'Harden for launch · 10 open'}]},
+ {k:'D',t:'D · TENANT ADMIN FLOW',epics:[
+   {n:'HUMAIN tenant and identity contract (multi-tenancy is HUMAIN\'s since 11 Aug)',id:'',mk:'todo',star:true,href:'#',bars:[{c:3,span:1,cls:'yellow',text:'Decision · tenant contract'}]},
+   {n:'Tenant Admin Console V4 wired to the lifecycle',id:'',mk:'todo',href:H+'Tenant_Admin_Console_V4.html',bars:[{c:4,span:2,cls:'blue',text:'Wire console to the lifecycle'}]},
  ]},
- {k:'E',t:'E · EVALUATION & QA',epics:[
-   {n:'Real Prism integration: Evaluate',id:'111',mk:'prog',href:'#',refs:[{t:'Eval options',u:'https://docs.google.com/document/d/1LcC0nOQ7hInbdwGxbYAJL6XV7szcO-BgMYXRLckHw3A/edit?tab=t.0'},{t:'Prism discussion',u:'https://docs.google.com/document/d/1fhkFb-gp0DussgNgvhn2-5iDPYsnmHjXdDA242kTPKs/edit?tab=t.egn81b42tf5'}],bars:[{c:3,span:2,cls:'green',text:'Prism eval'}]},
-   {n:'QA Workflow Operationalization',id:'1108',mk:'todo',href:'#',bars:[{c:3,span:3,cls:'green',text:'QA workflow'}]},
+ {k:'E',t:'E · MARKETPLACE INTEGRATION',epics:[
+   {n:'Publish from the lifecycle into a listing, carrying the verification record and badge',id:'',mk:'todo',href:H+'Public_Marketplace_V16.html',refs:[{t:'Marketplace V16',u:H+'Public_Marketplace_V16.html'}],bars:[{c:4,span:1,cls:'blue',text:'Certified agent → listing'}]},
+   {n:'Buyer acquires through the tenant flow, badge links back to the evidence',id:'',mk:'todo',href:H+'Public_Marketplace_V16.html',bars:[{c:4,span:2,cls:'blue',text:'Tenant acquisition flow end to end'}]},
+   {n:'Monetisation, payment, checkout',id:'',mk:'todo',href:'#',bars:[{c:5,span:1,cls:'future',text:'Out for LEAP, by decision'}]},
  ]},
- {k:'F',t:'F · OBSERVABILITY',epics:[
-   {n:'Observability: usage / safety / audit / logs',id:'997',mk:'prog',href:'https://docs.google.com/spreadsheets/d/1UV2PHQnavYSFqYGPYGEaDhL4eus-UlmIt8Ix4mi4I08/edit?usp=sharing',refs:[{t:'V9 · APPROVED dev flow',u:'https://ritwik-turing.github.io/humain-one/Agent_Lifecycle_V9.html'},{t:'V10 alt',u:'https://ritwik-turing.github.io/humain-one/Agent_Lifecycle_V10.html'},{t:'V8 alt',u:'https://ritwik-turing.github.io/humain-one/Agent_Lifecycle_V8.html'}],bars:[{c:1,span:3,cls:'green',text:'Usage · safety · tracing · audit · logs',half:'top'},{c:3,span:2,cls:'green',text:'Group 4 L0 build (1898–1903) · 13 open',half:'bot'}]},
-   {n:'Agent perf metrics · cost · KPI',id:'',mk:'prog',href:'https://docs.google.com/document/d/1UKecvJOJ4PDbXZYpMLH09DuOTES7xy2qZG1E6erfjtI/edit',bars:[{c:1,span:3,cls:'yellow',text:'Scope · P1 done'}]},
+ {k:'F',t:'F · AGENT CREATION, HUMAIN CODE INTEGRATION',epics:[
+   {n:'Who owns agent code generation (Sandip and Ritesh: Turing · Sijong: HUMAIN)',id:'',mk:'todo',star:true,href:'#',bars:[{c:2,span:2,cls:'yellow',text:'Decision · open since 24 Aug'}]},
+   {n:'Submit Agent step 1 is the manifest upload (agent YAML)',id:'',mk:'prog',href:H+'Agent_Lifecycle_V45.html',bars:[{c:2,span:1,cls:'green',text:'Manifest only · V69'}]},
+   {n:'HUMAIN Code output lands in Submit Agent without hand editing',id:'',mk:'todo',href:'#',bars:[{c:4,span:2,cls:'blue',text:'Code-gen → manifest → eval in one flow'}]},
+   {n:'The loop: prompt-generate → evaluate → iterate → certify → publish',id:'',mk:'todo',href:'#',bars:[{c:5,span:1,cls:'future',text:'End to end, once the pieces exist'}]},
  ]},
- {k:'G',t:'G · HUMAIN PLATFORM INTEGRATION  (CODE & GUARDIAN OUT OF LEAP SCOPE — ANDREW, 15 JUL)',epics:[
-   {n:'HUMAIN Code → ALM (no YAML upload) — out of LEAP scope',id:'new',mk:'todo',href:'https://docs.google.com/document/d/1kyyT6EaP0_MF-pkV0YWK4HC6CfgoRCwxyDDNNLUW4jc',bars:[{c:1,span:3,cls:'yellow',text:'Scope'},{c:4,span:2,cls:'future',text:'Post-LEAP build'}]},
-   {n:'DeployNow (replaces GCP sandbox)',id:'new',mk:'todo',href:'#',bars:[{c:1,span:3,cls:'yellow',text:'Scope'},{c:4,span:2,cls:'blue',text:'Build · cut over'}]},
-   {n:'HUMAIN Guardian: QA / certification — out of LEAP scope',id:'new',mk:'todo',href:'#',bars:[{c:2,span:2,cls:'yellow',text:'Scope'},{c:5,span:1,cls:'future',text:'Post-LEAP'}]},
- ]},
- {k:'H',t:'H · PROGRAMME & DEMO',epics:[
-   {n:'Demo Prep',id:'671',mk:'prog',href:'https://turing.zoom.us/rec/share/o0y3-BKyRZDrXn7Jgrl3cGRRLY0vAXc6gRpYFQ23yAYx_-3NOtKMBAPYWEHlFEyF.rpvt0GVT0ARuVH_b',refs:[{t:'Demo plan',u:'https://docs.google.com/document/d/15Ikx4_lmpv0MKgGQmwypm1WbWAjZ-hWRZVkEdWwXLxM/edit?tab=t.0'},{t:'Recordings + creds',u:'https://docs.google.com/spreadsheets/d/1JCc5UNwaSGYw0MnNM1q48TaSLQZHTISHG-yqyyYSjMg/edit?gid=0#gid=0'}],demos:[
-     {c:1,col:'var(--green)',t:'Dev UX'},{c:2,col:'var(--green)',t:'Observability'},
-     {c:3,col:'var(--amber)',t:'Golden path'},{c:4,col:'var(--blue)',t:'Lifecycle & Obs'},
-     {c:5,col:'var(--purple)',t:'Marketplace'}]},
-   {n:'Product Strategy',id:'755',mk:'prog',href:'https://turing.zoom.us/rec/share/fWrS7YGujJVnAWQUR7WL5G2NK4Ral8BDsT5dTS61qcvRFL52IvTcxaLcPsRjStHV.VgcOiLBphKEVaiQW',bars:[{c:1,span:5,cls:'found',text:'Ongoing programme direction'}]},
+ {k:'G',t:'G · PROGRAMME',epics:[
+   {n:'Sprint-end demos and reviews',id:'',mk:'prog',href:'#',demos:[
+     {c:1,col:'var(--green)',t:'Eval V13'},{c:2,col:'var(--green)',t:'Hub and console'},
+     {c:3,col:'var(--amber)',t:'Hardened evals, verifier queue'},{c:4,col:'var(--blue)',t:'Tenant and marketplace'},
+     {c:5,col:'var(--purple)',t:'End to end loop'}]},
+   {n:'Bi-weekly product flow session with Irene',id:'',mk:'prog',href:'#',bars:[{c:2,span:4,cls:'found',text:'Every two weeks from 14 Sep'}]},
+   {n:'Prototype publishing: versions kept, publish on request',id:'',mk:'prog',href:H,bars:[{c:1,span:5,cls:'found',text:'GitHub Pages · every version stays at its link'}]},
  ]},
 ];
 
@@ -234,7 +256,7 @@ sections.forEach(sec=>{
     const row=document.createElement('div');row.className='row';
     const star=ep.star?'<span class="star">★</span>':'';
     const idtxt=ep.id?(/^\d+$/.test(ep.id)?`<a class="epid" href="https://turingservices.atlassian.net/browse/HUMAIN-${ep.id}" target="_blank" rel="noopener">[${ep.id}]</a>`:`<span class="epid">[${ep.id}]</span>`):'';
-    const refs=(ep.refs||[]).map(r=>`<a class="ref" href="${r.u}" target="_blank" rel="noopener">${r.t}</a>`).join('');
+    const refs=(ep.refs||[]).filter(r=>r.u&&r.u!=='#').map(r=>`<a class="ref" href="${r.u}" target="_blank" rel="noopener">${r.t}</a>`).join('');
     const tgt=(ep.href&&ep.href!=='#')?' target="_blank" rel="noopener"':'';
     const link=`<a class="epi" href="${ep.href||'#'}"${tgt}>${ep.n}</a>`;
     let track='<div class="track"><span class="gl" style="left:20%"></span><span class="gl" style="left:40%"></span><span class="gl" style="left:60%"></span><span class="gl" style="left:80%"></span>';
@@ -245,7 +267,7 @@ sections.forEach(sec=>{
         const s=b.c, e=b.c+b.span-1;
         const win = s===e ? `${SP[s].n} · ${SP[s].d}` : `${SP[s].n} to ${SP[e].n} · ${SP[s].d} to ${SP[e].d}`;
         const jira = /^\d+$/.test(ep.id) ? `https://turingservices.atlassian.net/browse/HUMAIN-${ep.id}` : '';
-        const tip = `${b.text}|${win}|Feeds ${SP[e].demo} demo|${jira?('Open '+ep.n+' ['+ep.id+'] in JIRA'):''}`;
+        const tip = `${b.text}|${win}|Feeds the ${SP[e].demo} demo|${jira?('Open '+ep.n+' ['+ep.id+'] in JIRA'):''}`;
         const ja = jira?` data-jira="${jira}"`:'';
         track+=`<div class="bar ${b.cls}${half}" data-tip="${tip}"${ja} style="grid-column:${b.c} / span ${b.span};${align}">${b.text}</div>`;
       });
@@ -264,11 +286,11 @@ sections.forEach(sec=>{
 
 // demo detail cards
 const cards=[
- {sp:'S4',dt:'15–26 Jun',acc:'var(--green)',status:'COMMITTED',scol:'var(--green)',head:'Developer flow, new UX, end to end',desc:'The redesigned V05 portal, front to back.',show:['Submit → configure → provision sandbox','Run Meeting Manager agent live','New developer UX, end to end'],backed:'V05 Portal 1106 · Sandbox 524 · Ref agents'},
- {sp:'S5',dt:'29 Jun–10 Jul',acc:'var(--green)',status:'COMMITTED',scol:'var(--green)',head:'Real-API lifecycle + observability (first cut)',desc:'Journey now driven by the V05 backend APIs.',show:['Portal on real V05 APIs, not mocks','Observability: usage, logs, tracing','Harnesses running the agents'],backed:'V05 APIs 1182 · Observability 997 · Harnesses'},
- {sp:'S6',dt:'13–24 Jul',acc:'var(--amber)',status:'INTERNAL DELIVERY',scol:'var(--amber)',head:'Governed golden path, end to end',desc:'The governed lifecycle working internally.',show:['agent.yaml → Resolve & Plan (shows work)','Deploy → run → evidence','Prism eval wired in (stub if needed)'],backed:'Resolve V1 · Prism 111 · Registry 467 · Publish'},
- {sp:'S7',dt:'27 Jul–7 Aug',acc:'var(--blue)',status:'COMMITTED',scol:'var(--blue)',head:'Agent Lifecycle & Observability, demo-ready',desc:'The approved V9 lifecycle surface on real APIs, ahead of staging exposure.',note:'Re-scoped 15 Jul: HUMAIN Code and Guardian are out of LEAP; S7 doubles down on the lifecycle + observability surface Andrew approved.',show:['Agent Lifecycle: approved design (V9)','Observability in the submit flow and beyond','Sandbox re-configure in place (TR3-2.1)'],backed:'Observability 997 · Group 4 L0 1898–1903 · FE 733 · DeployNow'},
- {sp:'S8',dt:'10–21 Aug',acc:'var(--purple)',status:'LEAP LAUNCH',scol:'var(--purple)',head:'Two-sided marketplace, governed lifecycle',desc:'The full LEAP story, from publish to procure.',show:['Submit agent flow, end to end','Agent Lifecycle + Observability (approved V9 pattern)','Public Marketplace (separate URL): discover, procure, reuse','HUMAIN agents: Meeting, Trip, Translation'],backed:'Public Marketplace · Publish · Observability 997 · Reference cases'},
+ {sp:'S9',dt:'24 Aug–4 Sep',acc:'var(--green)',status:'DONE',scol:'var(--green)',head:'Evaluate, as a standalone product',desc:'Thirteen versions in twelve days after the 24 Aug turn. Prism reconciled with Uday on 1 Sep.',show:['Datasets from CSV, JSON, S3, Drive, warehouse, mapped once','Metrics: AI judge, code, REST, evaluation agent','Evaluations as agent × dataset × metrics, runs as receipts','Review, compare, evidence'],backed:'Eval Journey V1 to V13, team explainer, 1 Sep decision record'},
+ {sp:'S10',dt:'7–18 Sep',acc:'var(--green)',status:'CURRENT',scol:'var(--green)',head:'Evaluations hub inside the portal',desc:'One engine under two modes: the hub under Agent Lifecycle, and the run console on the agent page.',show:['Sidebar sub-ladder: Overview, Datasets, Metrics, Experiment templates, Evaluations','Submit Agent step 1 is the manifest only','Run console and Submit for verification on the agent','Reviewed with Ritesh and Irene, 14 Sep'],note:'Open from the review: summary and comparison broken, trace view to span and timeline, custom code execution needs a security call.',backed:'Shell V45 and engine V95 live; V70 and V110 local'},
+ {sp:'S11',dt:'21 Sep–2 Oct',acc:'var(--amber)',status:'PROPOSED',scol:'var(--amber)',head:'Hardened evaluations, first verifier queue',desc:'Close the 14 Sep list, then the first certification step.',show:['Summary, comparison and span-timeline traces working','Per-metric versioning and the playground','Submit for verification writes a record','Verifier persona decided'],backed:'14 Sep MOM, 13 Sep hub decisions'},
+ {sp:'S12',dt:'5–16 Oct',acc:'var(--blue)',status:'PROPOSED',scol:'var(--blue)',head:'Tenant side and marketplace, wired',desc:'The console and the storefront stop being standalone prototypes.',show:['Tenant admin sees every agent\'s verification state','Observability tab with real numbers','Certified agent publishes to a listing with its badge','Buyer acquires through the tenant flow'],backed:'Tenant Admin Console V4, Public Marketplace V16, observability spec'},
+ {sp:'S13 +',dt:'from 19 Oct',acc:'var(--purple)',status:'LEAP PREP',scol:'var(--purple)',head:'The whole loop, once',desc:'Prompt-generate an agent, evaluate it, iterate, certify, publish, acquire.',show:['HUMAIN Code output lands in Submit Agent','Guardian certification after the persona decision','Version-to-version observability delta','Monetisation stays out for LEAP'],backed:'Depends on the three ★ decisions'},
 ];
 const cc=document.getElementById('cards');
 cards.forEach(c=>{
@@ -284,25 +306,42 @@ cards.forEach(c=>{
 });
 
 // ---- Blockers & changes by sprint ----
-const sprintMeta={S4:'15–26 Jun',S5:'29 Jun–10 Jul',S6:'13–24 Jul',S7:'27 Jul–7 Aug',S8:'10–21 Aug'};
-const sprintAcc={S4:'var(--green)',S5:'var(--green)',S6:'var(--amber)',S7:'var(--blue)',S8:'var(--purple)'};
+const sprintMeta={S6:'13–24 Jul',S7:'27 Jul–7 Aug',S8:'10–21 Aug',S9:'24 Aug–4 Sep',S10:'7–18 Sep'};
+const sprintAcc={S6:'var(--amber)',S7:'var(--blue)',S8:'var(--purple)',S9:'var(--green)',S10:'var(--green)'};
 const blockers={
- S4:[
-  {b:'No clarity on <a href="https://turingservices.atlassian.net/browse/HUMAIN-879" target="_blank" rel="noopener">HUMAIN-879</a> (integrate H2O start + start_run with a persistent run ID). It was specced against an assumed two-step start/poll contract that does not exist in the Humain-deployed H2O-O v0.3 substrate, where a single POST /v1/runs returns the run_id. We cannot build against an API that is not there.',
-   c:'Moved 879 to backlog and created <a href="https://turingservices.atlassian.net/browse/HUMAIN-1114" target="_blank" rel="noopener">HUMAIN-1114</a> as the replacement, built against the real v0.3 contract (run-start + run-status adapters, SSE wrapper, Idempotency-Key). 1114 is set as the foundation and sequenced ahead of 880/881.',
-   i:'879 dropped from S4; agent-run lifecycle re-based on 1114; 880 (log streaming) and 881 (E2E lifecycle test) now blocked by 1114. Hits Sandbox Definition &amp; Lifecycle (E1 / 524) and the run-lifecycle demo.',
+ S6:[
+  {b:'LEAP demo scope was unconfirmed, and the Agent Lifecycle / Observability page needed soft approval before the staging URL could be exposed to HUMAIN.',
+   c:'Reviewed the three observability mockups with Andrew (15 Jul) and locked LEAP demo scope. In: submit agent flow, agent lifecycle, observability in the mockup pattern, public marketplace for acquisition on a separate URL. Out: HUMAIN Code, Guardian certification, Workspace publish.',
+   i:'H2O-O spine descoped to backlog, RC-2 close slipped. Marketplace re-cut to the tenant acquisition flow with a magic link (Daniel, 16 Jul). Demo promise reset from publish-to-marketplace back to genuine evaluation.',
+   s:'resolved'},
+ ],
+ S7:[
+  {b:'Lifecycle V9 judged too dense to demo at LEAP (23 Jul).',
+   c:'Rebuilt as the V10 keynote demo: nine scenes, single thread, no side panels. Interactive master flow added as the systems view.',
+   i:'One sprint of portal work re-cut. Native agent-to-agent composition dropped for LEAP because substrate v0.2 has no agent-calls-agent.',
+   s:'resolved'},
+ ],
+ S8:[
+  {b:'11 Aug checkpoint: Yasir becomes the overriding client voice, with priorities that differ from the LEAP roadmap agreed with Andrew and Sijong.',
+   c:'Turing stops building multi-tenancy; HUMAIN takes it at platform level. No hard GCP service dependencies, HUMAIN supports five clouds plus government on-premise. Separate verifier persona model overruled (Yasir over Sijong). CLI and chat developer surfaces parked.',
+   i:'In-flight multi-tenancy work reversed. Verifier persona question reopens later when submit-for-verification becomes real. Multi-agent test application sourced from open source rather than built.',
+   s:'resolved'},
+ ],
+ S9:[
+  {b:'Evaluation moves to the front of the developer journey (Yasir, 24 Aug). The prior roadmap had it as a supporting capability behind lifecycle and marketplace.',
+   c:'Developer journey re-cut with evaluation as the spine. Eval Journey prototyped standalone, V1 rejected 27 Aug as dense, V2 called too question-and-answer shaped, V3 onward reconciled with Prism. Facts settled with Uday 1 Sep: no pass bar, zero metrics attached at start, cost from tokens only.',
+   i:'RC-3 teardown and RC-5 observability slid a full sprint. Open conflict on who owns agent code generation: Sandip and Ritesh say Turing, Sijong said HUMAIN.',
    s:'ongoing'},
  ],
- S5:[],
- S6:[
-  {b:'LEAP demo scope was unconfirmed, and the Agent Lifecycle / Observability page needed soft approval before the staging URL could be exposed to HUMAIN (target end of July / early August).',
-   c:'Reviewed the three observability mockups with Andrew (15 Jul) and locked LEAP demo scope. In: submit agent flow, agent lifecycle, observability in the mockup pattern (in-flow and beyond), public marketplace for acquisition on a separate URL. Out: HUMAIN Code and Guardian certification.',
-   i:'Section G narrows to DeployNow only for LEAP; Code→ALM and Guardian move post-LEAP. HUMAIN Workspace publish also drops out of LEAP; Public Marketplace (separate URL) takes its slot — scope &amp; design by Ritwik in S6, build picked up S7. V9 locked as the approved developer-flow mockup. S7 demo re-focused to Lifecycle &amp; Observability and upgraded from STRETCH to COMMITTED.',
-   s:'resolved'},
- ],S7:[],S8:[],
+ S10:[
+  {b:'14 Sep review with Ritesh and Irene: evaluation summary and comparison views broken, trace view in the wrong layout, and unconstrained user code execution in metrics raises a security and architecture cost.',
+   c:'Fix summary and comparison with the team. Reformat traces to span and timeline. Per-metric versioning and a playground added to the backlog. Custom code execution goes to Youanka for engineering due diligence. Naming of evaluation constructs to be finalised against Irene\'s LangSmith reference.',
+   i:'Sprint 11 opens with the hardening list before certification starts. Bi-weekly product flow session with Irene set up.',
+   s:'open'},
+ ],
 };
 const blk=document.getElementById('blk');
-['S4','S5','S6','S7','S8'].forEach(sp=>{
+['S6','S7','S8','S9','S10'].forEach(sp=>{
   const items=blockers[sp]||[];
   const d=document.createElement('details');d.className='blk';
   let body='';
@@ -320,6 +359,37 @@ const blk=document.getElementById('blk');
       <span class="cnt">${items.length?items.length+' logged':'none yet'}</span>
     </summary>${body}`;
   blk.appendChild(d);
+});
+
+// ---- Links ----
+const LINKS=[
+ {g:'Roadmap',items:[
+   {t:'Roadmap narrative, 15 Sep',u:'roadmap-2026-09-15.html',d:'Ten sprints behind us, six things in store, with the gate on each.'},
+   {t:'July roadmap to LEAP',u:'roadmap-2026-07-15.html',d:'The version this page replaces, kept for the record.'},
+ ]},
+ {g:'Developer platform, live',items:[
+   {t:'Agent Lifecycle V45',u:H+'Agent_Lifecycle_V45.html',d:'The portal shell with the Evaluations hub. Latest published.'},
+   {t:'Eval Journey V95',u:H+'Eval_Journey_V95.html',d:'The evaluation engine the shell embeds. Latest published.'},
+   {t:'Guided evaluation walkthrough V64',u:H+'Eval_Guided_Demo_V64.html',d:'Scripted path through an evaluation, for a first-time viewer.'},
+   {t:'How the evaluation platform works',u:H+'Eval_Platform_How_It_Works.html',d:'The team explainer with the real screens embedded.'},
+ ]},
+ {g:'LEAP demo and the other sides',items:[
+   {t:'LEAP demo, simplified',u:H+'Leap_Demo_Simplified.html',d:'The single-thread keynote version.'},
+   {t:'Public Marketplace V16',u:H+'Public_Marketplace_V16.html',d:'The buyer side, cut to the tenant acquisition flow.'},
+   {t:'Tenant Admin Console V4',u:H+'Tenant_Admin_Console_V4.html',d:'Verification queue, records, policy and access.'},
+   {t:'Interactive master flow',u:H+'Agent_Lifecycle_Flow_Interactive.html',d:'The whole lifecycle as one map.'},
+   {t:'All prototypes',u:H,d:'The suite home. Every version kept.'},
+ ]},
+ {g:'Programme',items:[
+   {t:'Jira board HUMAIN',u:'https://turingservices.atlassian.net/jira/software/c/projects/HUMAIN/boards/2359',d:'Live ticket state. Login required.'},
+   {t:'Sprint tracker sheet',u:'https://docs.google.com/spreadsheets/d/1BsmGCPubSY-L-CfiwMDoZlOHEsytI3chl5TpTnxU12o/edit?gid=795769576#gid=795769576',d:'The sprint sheet the July page was re-timed from. Login required.'},
+ ]},
+];
+const lg=document.getElementById('links');
+LINKS.forEach(g=>{
+  const el=document.createElement('div');el.className='lcard';
+  el.innerHTML=`<div class="lg">${g.g}</div>`+g.items.map(i=>`<a class="lk" href="${i.u}" target="_blank" rel="noopener"><b>${i.t} ↗</b><span>${i.d}</span></a>`).join('');
+  lg.appendChild(el);
 });
 
 // ---- Interactive capsule tooltips ----
