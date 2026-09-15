@@ -190,7 +190,7 @@ const sections_now=[
    {n:'Portal shell: Evaluations hub, submit pickers, run console on the agent',id:'',mk:'prog',href:H+'Agent_Lifecycle_V45.html',refs:[{t:'V45 live',u:H+'Agent_Lifecycle_V45.html'},{t:'Hub decisions 13 Sep',u:'roadmap-2026-09-15.html'}],bars:[{c:2,span:1,cls:'green',text:'V13 to V70 · hub in the portal'}]},
    {n:'Evaluations hardened: summary, comparison, traces, metric versioning, playground',id:'',mk:'todo',href:'#',bars:[{c:2,span:1,cls:'yellow',text:'14 Sep review list',half:'top'},{c:2,span:2,cls:'green',text:'Fix and ship',half:'bot'}]},
    {n:'Custom code execution in metrics: security and architecture call',id:'',mk:'todo',star:true,href:'#',bars:[{c:2,span:2,cls:'yellow',text:'Due diligence with Youanka · plan to the group'}]},
-   {n:'Naming of evaluation constructs aligned across products (LangSmith reference from Irene)',id:'',mk:'todo',href:'#',bars:[{c:2,span:2,cls:'yellow',text:'Finalise names · bi-weekly with Irene'}]},
+   {n:'Naming of evaluation constructs aligned across products (LangSmith reference)',id:'',mk:'todo',href:'#',bars:[{c:2,span:2,cls:'yellow',text:'Finalise names · bi-weekly with the client'}]},
  ]},
  {k:'B',t:'B · CERTIFICATION AND THE VERIFIER PERSONA',epics:[
    {n:'Submit for verification writes the record from the Evaluations tab',id:'',mk:'todo',href:'#',bars:[{c:3,span:1,cls:'green',text:'Record at exact versions'}]},
@@ -213,7 +213,7 @@ const sections_now=[
    {n:'Monetisation, payment, checkout',id:'',mk:'todo',href:'#',bars:[{c:5,span:1,cls:'future',text:'Out for LEAP, by decision'}]},
  ]},
  {k:'F',t:'F · AGENT CREATION, HUMAIN CODE INTEGRATION',epics:[
-   {n:'Who owns agent code generation (Sandip and Ritesh: Turing · Sijong: HUMAIN)',id:'',mk:'todo',star:true,href:'#',bars:[{c:2,span:2,cls:'yellow',text:'Decision · open since 24 Aug'}]},
+   {n:'Who owns agent code generation (Turing team: Turing · Sijong: HUMAIN)',id:'',mk:'todo',star:true,href:'#',bars:[{c:2,span:2,cls:'yellow',text:'Decision · open since 24 Aug'}]},
    {n:'Submit Agent step 1 is the manifest upload (agent YAML)',id:'',mk:'prog',href:H+'Agent_Lifecycle_V45.html',bars:[{c:2,span:1,cls:'green',text:'Manifest only · V69'}]},
    {n:'HUMAIN Code output lands in Submit Agent without hand editing',id:'',mk:'todo',href:'#',bars:[{c:4,span:2,cls:'blue',text:'Code-gen → manifest → eval in one flow'}]},
    {n:'The loop: prompt-generate → evaluate → iterate → certify → publish',id:'',mk:'todo',href:'#',bars:[{c:5,span:1,cls:'future',text:'End to end, once the pieces exist'}]},
@@ -223,13 +223,13 @@ const sections_now=[
      {c:1,col:'var(--green)',t:'Eval V13'},{c:2,col:'var(--green)',t:'Hub and console'},
      {c:3,col:'var(--amber)',t:'Hardened evals, verifier queue'},{c:4,col:'var(--blue)',t:'Tenant and marketplace'},
      {c:5,col:'var(--purple)',t:'End to end loop'}]},
-   {n:'Bi-weekly product flow session with Irene',id:'',mk:'prog',href:'#',bars:[{c:2,span:4,cls:'found',text:'Every two weeks from 14 Sep'}]},
+   {n:'Bi-weekly product flow session with the client',id:'',mk:'prog',href:'#',bars:[{c:2,span:4,cls:'found',text:'Every two weeks from 14 Sep'}]},
    {n:'Prototype publishing: versions kept, publish on request',id:'',mk:'prog',href:H,bars:[{c:1,span:5,cls:'found',text:'GitHub Pages · every version stays at its link'}]},
  ]},
 ];
 const cards_now=[
  {sp:'S9',dt:'24 Aug–4 Sep',acc:'var(--green)',status:'DONE',scol:'var(--green)',head:'Evaluate, as a standalone product',desc:'Thirteen versions in twelve days after the 24 Aug turn. Eval flow reconciled with Uday on 1 Sep.',show:['Datasets from CSV, JSON, S3, Drive, warehouse, mapped once','Metrics: AI judge, code, REST, evaluation agent','Evaluations as agent × dataset × metrics, runs as receipts','Review, compare, evidence'],backed:'Eval Journey V1 to V13, team explainer, 1 Sep decision record'},
- {sp:'S10',dt:'7–18 Sep',acc:'var(--green)',status:'CURRENT',scol:'var(--green)',head:'Evaluations hub inside the portal',desc:'One engine under two modes: the hub under Agent Lifecycle, and the run console on the agent page.',show:['Sidebar sub-ladder: Overview, Datasets, Metrics, Experiment templates, Evaluations','Submit Agent step 1 is the manifest only','Run console and Submit for verification on the agent','Reviewed with Ritesh and Irene, 14 Sep'],note:'Open from the review: summary and comparison broken, trace view to span and timeline, custom code execution needs a security call.',backed:'Shell V45 and engine V95 live; V70 and V110 local'},
+ {sp:'S10',dt:'7–18 Sep',acc:'var(--green)',status:'CURRENT',scol:'var(--green)',head:'Evaluations hub inside the portal',desc:'One engine under two modes: the hub under Agent Lifecycle, and the run console on the agent page.',show:['Sidebar sub-ladder: Overview, Datasets, Metrics, Experiment templates, Evaluations','Submit Agent step 1 is the manifest only','Run console and Submit for verification on the agent','Client review, 14 Sep'],note:'Open from the review: summary and comparison broken, trace view to span and timeline, custom code execution needs a security call.',backed:'Shell V45 and engine V95 live; V70 and V110 local'},
  {sp:'S11',dt:'21 Sep–2 Oct',acc:'var(--amber)',status:'PROPOSED',scol:'var(--amber)',head:'Hardened evaluations, first verifier queue',desc:'Close the 14 Sep list, then the first certification step.',show:['Summary, comparison and span-timeline traces working','Per-metric versioning and the playground','Submit for verification writes a record','Verifier persona decided'],backed:'14 Sep MOM, 13 Sep hub decisions'},
  {sp:'S12',dt:'5–16 Oct',acc:'var(--blue)',status:'PROPOSED',scol:'var(--blue)',head:'Tenant side and marketplace, wired',desc:'The console and the storefront stop being standalone prototypes.',show:['Tenant admin sees every agent\'s verification state','Observability tab with real numbers','Certified agent publishes to a listing with its badge','Buyer acquires through the tenant flow'],backed:'Tenant Admin Console V4, Public Marketplace V16, observability spec'},
  {sp:'S13 +',dt:'from 19 Oct',acc:'var(--purple)',status:'LEAP PREP',scol:'var(--purple)',head:'The whole loop, once',desc:'Prompt-generate an agent, evaluate it, iterate, certify, publish, acquire.',show:['HUMAIN Code output lands in Submit Agent','Guardian certification after the persona decision','Version-to-version observability delta','Monetisation stays out for LEAP'],backed:'Depends on the three ★ decisions'},
@@ -258,13 +258,13 @@ const blockers_now={
  S9:[
   {b:'Evaluation moves to the front of the developer journey (Yasir, 24 Aug). The prior roadmap had it as a supporting capability behind lifecycle and marketplace.',
    c:'Developer journey re-cut with evaluation as the spine. Eval Journey prototyped standalone, V1 rejected 27 Aug as dense, V2 called too question-and-answer shaped, V3 onward reconciled with the Eval flow. Facts settled with Uday 1 Sep: no pass bar, zero metrics attached at start, cost from tokens only.',
-   i:'RC-3 teardown and RC-5 observability slid a full sprint. Open conflict on who owns agent code generation: Sandip and Ritesh say Turing, Sijong said HUMAIN.',
+   i:'RC-3 teardown and RC-5 observability slid a full sprint. Open conflict on who owns agent code generation: Sandip and the team say Turing, Sijong said HUMAIN.',
    s:'ongoing'},
  ],
  S10:[
-  {b:'14 Sep review with Ritesh and Irene: evaluation summary and comparison views broken, trace view in the wrong layout, and unconstrained user code execution in metrics raises a security and architecture cost.',
-   c:'Fix summary and comparison with the team. Reformat traces to span and timeline. Per-metric versioning and a playground added to the backlog. Custom code execution goes to Youanka for engineering due diligence. Naming of evaluation constructs to be finalised against Irene\'s LangSmith reference.',
-   i:'Sprint 11 opens with the hardening list before certification starts. Bi-weekly product flow session with Irene set up.',
+  {b:'14 Sep client review: evaluation summary and comparison views broken, trace view in the wrong layout, and unconstrained user code execution in metrics raises a security and architecture cost.',
+   c:'Fix summary and comparison with the team. Reformat traces to span and timeline. Per-metric versioning and a playground added to the backlog. Custom code execution goes to Youanka for engineering due diligence. Naming of evaluation constructs to be finalised against the LangSmith reference.',
+   i:'Sprint 11 opens with the hardening list before certification starts. Bi-weekly product flow session with the client set up.',
    s:'open'},
  ],
 };
