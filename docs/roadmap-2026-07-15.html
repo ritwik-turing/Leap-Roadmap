@@ -117,6 +117,7 @@
   .tag.ongoing{background:rgba(83,144,255,.16);color:var(--blue)}
   .blk-empty{color:var(--dim);font-size:12px;padding:6px 2px 8px;font-style:italic}
   @media(max-width:900px){.cards{grid-template-columns:1fr 1fr}.row,.hrow{grid-template-columns:160px repeat(5,1fr)}:root{--label-w:160px}}
+.epi-nodoc{cursor:default;text-decoration:none;color:inherit}.epi-nodoc:hover{text-decoration:none;color:inherit}
 </style>
 </head>
 <body>
@@ -236,7 +237,7 @@ sections.forEach(sec=>{
     const idtxt=ep.id?(/^\d+$/.test(ep.id)?`<a class="epid" href="https://turingservices.atlassian.net/browse/HUMAIN-${ep.id}" target="_blank" rel="noopener">[${ep.id}]</a>`:`<span class="epid">[${ep.id}]</span>`):'';
     const refs=(ep.refs||[]).map(r=>`<a class="ref" href="${r.u}" target="_blank" rel="noopener">${r.t}</a>`).join('');
     const tgt=(ep.href&&ep.href!=='#')?' target="_blank" rel="noopener"':'';
-    const link=`<a class="epi" href="${ep.href||'#'}"${tgt}>${ep.n}</a>`;
+    const link=(ep.href&&ep.href!=='#')?`<a class="epi" href="${ep.href}"${tgt}>${ep.n}</a>`:`<span class="epi epi-nodoc" title="No document linked yet">${ep.n}</span>`;
     let track='<div class="track"><span class="gl" style="left:20%"></span><span class="gl" style="left:40%"></span><span class="gl" style="left:60%"></span><span class="gl" style="left:80%"></span>';
     if(ep.bars){
       ep.bars.forEach(b=>{

@@ -134,6 +134,7 @@
   .switch button.on{background:var(--blue);color:#06122e}
   .switch button:not(.on):hover{color:var(--white)}
   .archived{display:inline-block;margin-left:8px;font-size:9px;font-weight:800;letter-spacing:.06em;padding:2px 8px;border-radius:10px;background:rgba(243,194,78,.16);color:var(--yellow);vertical-align:2px}
+.epi-nodoc{cursor:default;text-decoration:none;color:inherit}.epi-nodoc:hover{text-decoration:none;color:inherit}
 </style>
 </head>
 <body>
@@ -436,7 +437,7 @@ function renderGrid(V){
       const idtxt=ep.id?(/^\d+$/.test(ep.id)?`<a class="epid" href="https://turingservices.atlassian.net/browse/HUMAIN-${ep.id}" target="_blank" rel="noopener">[${ep.id}]</a>`:`<span class="epid">[${ep.id}]</span>`):'';
       const refs=(ep.refs||[]).filter(r=>r.u&&r.u!=='#').map(r=>`<a class="ref" href="${r.u}" target="_blank" rel="noopener">${r.t}</a>`).join('');
       const tgt=(ep.href&&ep.href!=='#')?' target="_blank" rel="noopener"':'';
-      const link=`<a class="epi" href="${ep.href||'#'}"${tgt}>${ep.n}</a>`;
+      const link=(ep.href&&ep.href!=='#')?`<a class="epi" href="${ep.href}"${tgt}>${ep.n}</a>`:`<span class="epi epi-nodoc" title="No document linked yet">${ep.n}</span>`;
       let track='<div class="track"><span class="gl" style="left:20%"></span><span class="gl" style="left:40%"></span><span class="gl" style="left:60%"></span><span class="gl" style="left:80%"></span>';
       if(ep.bars){
         ep.bars.forEach(b=>{
